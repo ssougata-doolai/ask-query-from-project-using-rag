@@ -1,0 +1,27 @@
+sentence-transformers>=2.7.0
+
+# Vector store — pick one or both
+faiss-cpu>=1.7.4          # Meta's fast vector index, works on any Python version
+chromadb>=0.5.0           # full-featured vector DB, requires Python 3.9+
+
+# LLM — Groq
+# Sign up at https://console.groq.com to get your free API key
+groq>=0.9.0
+
+# UI
+streamlit>=1.35.0
+
+# Notebook
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Utilities
+python-dotenv>=1.0.0     # load .env file automatically
+ragas>=0.2.0
+
+# ── Optional alternatives ──────────────────────────────────────────────────
+# Ollama Python client (if you prefer fully local LLM)
+# ollama>=0.2.0
+
+# OpenAI (if you switch to GPT or OpenAI embeddings later)
+# openai>=1.30.0

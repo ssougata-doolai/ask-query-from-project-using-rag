@@ -1,0 +1,135 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .gitignore — Codebase Q&A RAG Project
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+.env
+*.key
+*.pem
+*.code-workspace
+secrets/
+
+
+# ── Cloned repos (large, re-cloneable) ───────────────────────────────────────
+httpx/
+fastapi/
+requests/
+repo/
+# add any other repos you index here
+
+
+# ── Vector DB (auto-generated, can be rebuilt) ────────────────────────────────
+chroma_db/
+vector_db/
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env.local
+.env.*.local
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+# Keep .ipynb files but ignore checkpoint clutter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+# Uncomment below if you want to ignore notebook outputs too:
+# *.ipynb
+
+
+# ── ML / Model artifacts ──────────────────────────────────────────────────────
+# HuggingFace / sentence-transformers cache (can be large)
+.cache/
+models/
+*.bin
+*.pt
+*.ckpt
+*.safetensors
+# But keep small config/tokenizer JSON files if you commit them
+# !*.json
+
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+.hypothesis/
+test-results/
+
+
+# ── Type checking & linting ───────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+
+# ── IDEs & Editors ────────────────────────────────────────────────────────────
+# VS Code
+.vscode/
+!.vscode/extensions.json     # keep recommended extensions list
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ── Logs & temp files ─────────────────────────────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+
+# ── Output files generated during runs ───────────────────────────────────────
+outputs/
+results/

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q001",
+    "question": "How does httpx handle timeouts?",
+    "expected_keywords": ["timeout", "connect_timeout", "read_timeout", "Timeout"],
+    "expected_files": ["_config.py", "_client.py"],
+    "category": "configuration"
+  },
+  {
+    "id": "q002",
+    "question": "What authentication methods does httpx support?",
+    "expected_keywords": ["BasicAuth", "DigestAuth", "Auth", "bearer", "token"],
+    "expected_files": ["_auth.py"],
+    "category": "authentication"
+  },
+  {
+    "id": "q003",
+    "question": "How does AsyncClient differ from the regular Client?",
+    "expected_keywords": ["AsyncClient", "Client", "async", "await"],
+    "expected_files": ["_client.py"],
+    "category": "architecture"
+  },
+  {
+    "id": "q004",
+    "question": "How are HTTP redirects handled in httpx?",
+    "expected_keywords": ["redirect", "follow_redirects", "max_redirects", "location"],
+    "expected_files": ["_client.py", "_status_codes.py"],
+    "category": "http"
+  },
+  {
+    "id": "q005",
+    "question": "How does httpx manage connection pooling?",
+    "expected_keywords": ["pool", "connection", "limits", "max_connections", "keepalive"],
+    "expected_files": ["_config.py", "_transports"],
+    "category": "networking"
+  },
+  {
+    "id": "q006",
+    "question": "How are cookies handled in httpx?",
+    "expected_keywords": ["Cookies", "cookie", "set_cookie", "jar"],
+    "expected_files": ["_models.py", "_cookies.py"],
+    "category": "http"
+  },
+  {
+    "id": "q007",
+    "question": "What is the default transport used by httpx?",
+    "expected_keywords": ["transport", "HTTPTransport", "AsyncHTTPTransport", "httpcore"],
+    "expected_files": ["_transports", "_client.py"],
+    "category": "architecture"
+  },
+  {
+    "id": "q008",
+    "question": "How does httpx handle SSL certificate verification?",
+    "expected_keywords": ["ssl", "verify", "cert", "SSLContext", "create_ssl_context"],
+    "expected_files": ["_config.py", "_transports"],
+    "category": "security"
+  },
+  {
+    "id": "q009",
+    "question": "How are request headers set and managed?",
+    "expected_keywords": ["Headers", "headers", "header", "MutableHeaders"],
+    "expected_files": ["_models.py", "_headers.py"],
+    "category": "http"
+  },
+  {
+    "id": "q010",
+    "question": "How does httpx encode request body and form data?",
+    "expected_keywords": ["encode", "content", "data", "json", "multipart", "UrlEncoded"],
+    "expected_files": ["_content.py", "_multipart.py"],
+    "category": "serialization"
+  },
+  {
+    "id": "q011",
+    "question": "How does httpx build and encode URLs?",
+    "expected_keywords": ["URL", "QueryParams", "params", "encode", "urlencode"],
+    "expected_files": ["_urls.py", "_models.py"],
+    "category": "http"
+  },
+  {
+    "id": "q012",
+    "question": "What exceptions does httpx raise on errors?",
+    "expected_keywords": ["HTTPError", "RequestError", "TimeoutException", "ConnectError"],
+    "expected_files": ["_exceptions.py"],
+    "category": "error_handling"
+  }
+]
